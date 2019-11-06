@@ -1,0 +1,39 @@
+{
+	"Rice1" : 
+	{
+		"name" : "Basmati",
+		"weight": 350,
+		"price": 100
+	},
+	"Rice2":
+	{
+		"name" : "Kulum",
+		"weight": 567,
+		"price": 45
+	},
+	"Wheat1":
+	{
+		"name" : "Comon",
+		"weight": 435,
+		"price": 67
+	},
+	"Wheat2":
+	{
+		"name" : "Durum",
+		"weight": 123,
+		"price": 23
+	},
+	"Pulses1":
+	{
+		"name" : "Peas",
+		"weight": 567,
+		"price": 45
+	},
+	"Pulses2":
+	{
+		"name" : "Moong",
+		"weight": 567,
+		"price": 45
+	}
+	
+}
