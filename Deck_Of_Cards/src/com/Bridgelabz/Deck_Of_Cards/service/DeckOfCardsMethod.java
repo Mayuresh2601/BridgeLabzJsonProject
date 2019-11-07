@@ -1,5 +1,7 @@
 package com.Bridgelabz.Deck_Of_Cards.service;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 public class DeckOfCardsMethod {
@@ -7,8 +9,9 @@ public class DeckOfCardsMethod {
 	private static String[] suits = {"Heart","Spade","Club","Diamond"};
 	private static String[] ranks = {"2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
 	private static String[] cards = new String[52];
+	Map<String,String> map = new HashMap<String, String>();
 	
-	//Storing Cards on 
+	//Storing Cards on cards array 
 	public String[] getCards() {
 		int i=0;
 		for(String suit : suits)
@@ -23,7 +26,6 @@ public class DeckOfCardsMethod {
 	
 	// shuffle cards using random  function
 	public void shuffleCard() {
-		
 		
 		Random random = new Random();
 		for (int i = 0; i < cards.length; i++)
@@ -60,6 +62,8 @@ public class DeckOfCardsMethod {
 				System.out.println("player " + (i++) + " Cards are: ");
 
 				for (String card : PlayerCard) {
+					
+					map.put(card, card);
 					System.out.print(card + ",  ");
 				}
 				System.out.println();

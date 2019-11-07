@@ -20,16 +20,19 @@ public class InventoryManagementMain {
 	
 		Map<String, InventoryInfo> mapreader =mapper.readValue(new File(Path), new TypeReference<Map<String, InventoryInfo>>() {});
 	
+		//Printing Data of Rice Grain
 		InventoryInfo rice=mapreader.get("list1");
 		System.out.println("Grain_Name: "+rice.getName()+"\nWeight: "+rice.getWeight()+"\nPrice_Per_Kg: "+rice.getPrice());
 		System.out.println("Total Price of Rice: " +rice.getPrice()*rice.getWeight()+" per kg");
 		System.out.println();
 		
+		//Printing Data of Wheat Grain
 		InventoryInfo wheat =mapreader.get("list2");
 		System.out.println("Grain_Name: "+wheat.getName()+"\nWeight: "+wheat.getWeight()+"\nPrice_Per_Kg: "+wheat.getPrice());
 		System.out.println("Total Price of Wheat: " +wheat.getPrice()*wheat.getWeight()+" per kg");
 		System.out.println();
 		
+		//Printing Data of Pulses Grain
 		InventoryInfo pulses = mapreader.get("list3");
 		System.out.println("Grain_Name: "+pulses.getName()+"\nWeight: "+pulses.getWeight()+"\nPrice_Per_Kg: "+pulses.getPrice());
 		System.out.println("Total Price of Pulses: " +pulses.getPrice()*pulses.getWeight()+" per kg");

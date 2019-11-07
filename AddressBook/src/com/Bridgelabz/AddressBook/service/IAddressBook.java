@@ -18,7 +18,7 @@ public interface IAddressBook {
 	
 	void sortByLastName();
     
-	void sortByZipCode();
+	void sortByPinCode();
 	
 	void readJson();
 
