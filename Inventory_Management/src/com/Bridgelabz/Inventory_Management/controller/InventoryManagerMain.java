@@ -13,7 +13,7 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 
 public class InventoryManagerMain {
 
-	private static InventoryMethod method = new InventoryMethod();
+	public static InventoryMethod method = new InventoryMethod();
 	
 	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
 		

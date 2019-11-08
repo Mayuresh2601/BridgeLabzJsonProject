@@ -60,7 +60,7 @@ public class AddressBookMethod implements IAddressBook{
 					// Print Details
 					if(counter >= 1) {
 						System.out.println("Address book Details...");
-						printDetails(persons, statename);
+						printDetails();
 					}
 					
 					else {
@@ -158,7 +158,7 @@ public class AddressBookMethod implements IAddressBook{
 		System.out.println();
 	}
 
-	public static void printDetails(ArrayList<PersonInfo> persons, String statename) {
+	public static void printDetails() {
 		
 		persons.forEach(i -> {
 			
@@ -242,7 +242,7 @@ public class AddressBookMethod implements IAddressBook{
 						if (counter > 0) 
 						{
 							System.out.println("----------------ADDRESS BOOK------------");
-							AddressBookMethod.printDetails(persons, statename);
+							AddressBookMethod.printDetails();
 						} 
 						else {
 							System.out.println("There is no record to print...");
@@ -350,7 +350,7 @@ public class AddressBookMethod implements IAddressBook{
 			persons.sort( (e1, e2) -> e1.getLname().compareTo(e2.getLname()));
 			
 			/*printing after sorting the data*/
-			printDetails(persons, statename);
+			printDetails();
 			 
 		} else
 			System.out.println("Less records to sort");
@@ -366,7 +366,7 @@ public class AddressBookMethod implements IAddressBook{
 			persons.sort((e1, e2) -> String.valueOf(e1.getAddressObj().getPinCode())
 					.compareTo(String.valueOf(e2.getAddressObj().getPinCode())));
 			
-			printDetails(persons, statename);
+			printDetails();
 			 
 		 
 		} else
@@ -400,30 +400,35 @@ public class AddressBookMethod implements IAddressBook{
 	public void saveAs() throws FileNotFoundException {
 		
 		System.out.println("*****Save as*****");
-		String Inputpath = "/home/admin1/Desktop/BridgeLabz/AddressBook/src/com/Bridgelabz/AddressBook/JsonFile/";
-		System.out.println("Enter filename u want to save");
-		Inputpath += utility.readString();
-	    Inputpath += ".json";
+		String f = "AddressBook1.json";
 		
-		if (new File(Inputpath).exists()) 
+		File file1 = new File("/home/admin1/Desktop/BridgeLabz/AddressBook/src/com/Bridgelabz/AddressBook/JsonFile/"+f);		
+		
+		System.out.println("Enter Filename you want to SaveAs in addressbook");
+		String name= utility.readString();
+	    name += ".json";
+	    File file2 = new File("/home/admin1/Desktop/BridgeLabz/AddressBook/src/com/Bridgelabz/AddressBook/JsonFile/"+name);
+		
+	    if (file2.exists()) 
 		{
 			throw new FileNotFoundException("You cannot rewrite existing file");
 		} 
 		else 
 		{
-			// writing into file
-			System.out.println("Saving address book into file....");
-			model.setPersoninfo(persons);
+			if(file1.renameTo(file2)) {
+				// writing into file
+				System.out.println("Saving address book into file....");
+				model.setPersoninfo(persons);
 			
-			try {
+				try {
 				
-				utility.writeMapper(Inputpath, model);
+					utility.writeMapper("/home/admin1/Desktop/BridgeLabz/AddressBook/src/com/Bridgelabz/AddressBook/JsonFile/"+name, model);
 				
-			} catch (IOException e) {
+				} catch (IOException e) {
 
-				e.printStackTrace();
-			}
-			 
+					e.printStackTrace();
+				}
+			}	 
 		}
 	}
 
