@@ -75,5 +75,16 @@ public class StockManagementMethod {
 		System.out.println("Total Share of Each Stock is: "+result);
 
 	}
+	
+	public void readJsonFile(String Path) {
+		
+		File file = new File(Path);
+				
+		
+		
+
+	}
+	
+	
 
 }

@@ -1,0 +1,21 @@
+{
+	"company":[
+	{
+		"Companyname":"Accenture",
+		"Symbol": "Acc",
+		"Totalshares":120,
+		"Pricepershare":100
+	},
+	{
+		"Companyname":"Wipro",
+		"Symbol": "W",
+		"Totalshares":150,
+		"Pricepershare":120
+	},
+	{
+		"Companyname":"Accenture",
+		"Symbol": "Acc",
+		"Totalshares":200,
+		"Pricepershare":180
+	}]
+}
