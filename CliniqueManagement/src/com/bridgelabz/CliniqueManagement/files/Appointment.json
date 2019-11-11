@@ -1,0 +1,18 @@
+{
+	"appointmentInfo": [
+		{
+			"patientId": 1,
+			"patientName": "Ajay",
+			"docid": 1,
+			"docname": "MAyur",
+			"availibility": "AM"
+		},
+		{
+			"patientId": 2,
+			"patientName": "Raj",
+			"docid": 1,
+			"docname": "MAyur",
+			"availibility": "PM"
+		}
+	]
+}

@@ -6,15 +6,8 @@ public class DoctorInfo {
 	private String docname;
 	private String specilist;
 	private String availability;
-	private int appointment;
-	
-	public int getAppointment() {
-		return appointment;
-	}
-
-	public void setAppointment(int appointment) {
-		appointment = appointment;
-	}
+	private int amcount;
+	private int pmcount;
 
 	public int getDocid() {
 		return docid;
@@ -45,7 +38,39 @@ public class DoctorInfo {
 	}
 	
 	public void setAvailability(String availability) {
-		availability = availability;
+		this.availability = availability;
+	}
+	
+	public int getAmcount() {
+		return amcount;
+	}
+
+	public void setAmcount(int amcount) {
+		this.amcount = amcount;
+	}
+
+	public int getPmcount() {
+		return pmcount;
+	}
+
+	public void setPmcount(int pmcount) {
+		this.pmcount = pmcount;
+	}
+	
+	public DoctorInfo(int docid, String docname, String availability, String specilist, int amCount, int pmCount) {
+		super();
+		this.docid = docid;
+		this.docname = docname;
+		this.availability = availability;
+		this.specilist = specilist;
+		this.amcount = amCount;
+		this.pmcount = pmCount;
+	}
+	
+	public DoctorInfo() {
+		
+		
+		
 	}
 
 }

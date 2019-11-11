@@ -1,1 +1,28 @@
-{"doctorinfo":[{"docid":69,"docname":"Mayuresh","specilist":"Heart","availability":"AM","appointment":0},{"docid":25,"docname":"Rohit","specilist":"Brain","availability":"PM","appointment":0}]}
+{
+	"doctorinfo": [
+		{
+			"docid": 1,
+			"docname": "MAyur",
+			"specilist": "Heart",
+			"availability": "AM",
+			"amcount": 0,
+			"pmcount": 0
+		},
+		{
+			"docid": 2,
+			"docname": "Rohit",
+			"specilist": "Brain",
+			"availability": "PM",
+			"amcount": 0,
+			"pmcount": 0
+		},
+		{
+			"docid": 3,
+			"docname": "Mayur",
+			"specilist": "Heart",
+			"availability": "AM",
+			"amcount": 0,
+			"pmcount": 0
+		}
+	]
+}

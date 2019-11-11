@@ -10,7 +10,6 @@ public class AddressBookMain {
 
 	public static void main(String[] args) throws InterruptedException, FileNotFoundException, IOException {
 
-		int counter = 0;
 		JsonUtility utility = new JsonUtility();
 		AddressBookMethod method = new AddressBookMethod();
 		method.readJson();

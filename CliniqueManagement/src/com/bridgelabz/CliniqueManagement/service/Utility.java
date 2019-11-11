@@ -10,23 +10,22 @@ public class Utility {
 	Scanner sc = new Scanner(System.in);
 	
 	public String readString() {
-		String str = sc.next();
-		return str;
+		
+		return sc.next();
 	}
-	public boolean readBoolean() {
-		boolean flag = sc.nextBoolean();
-		return flag;
-	}
+	
 	public int readInt() {
-		int num = sc.nextInt();
-		return num;
+		
+		return  sc.nextInt();
 	}
 	
 	public long readLong() {
-		long num = sc.nextLong();
-		return num;
+		
+		return  sc.nextLong();
+		
 	}
 	public Date printDate(String date){
+		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
 		try{
 			return sdf.parse(date);
