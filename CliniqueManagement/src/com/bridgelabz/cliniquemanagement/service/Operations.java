@@ -32,6 +32,8 @@ public class Operations implements OperationI{
 	long phone;
 	int age;
 
+	/*Method to perform operation on patient and doctor details
+	 */
 	@Override
 	public void operation() {
 		try {
@@ -82,6 +84,8 @@ public class Operations implements OperationI{
 
 	}
 
+	/*Method to Add Person Details
+	 */
 	@Override
 	public void addPatient() {
 		System.out.println("Enter Patient name");
@@ -102,6 +106,8 @@ public class Operations implements OperationI{
 		savePatient();
 	}
 
+	/*Method to Delete Patient Details
+	 */
 	@Override
 	public void deletePatient() {
 		System.out.println("Enter Patient id");
@@ -118,6 +124,8 @@ public class Operations implements OperationI{
 		savePatient();
 	}
 
+	/*Method to Add Doctor Details
+	 */
 	@Override
 	public void addDoctor() {
 		System.out.println("Enter Name");
@@ -138,6 +146,8 @@ public class Operations implements OperationI{
 		saveDoctor();
 	}
 
+	/*Method to Delete Doctor Details
+	 */
 	@Override
 	public void deleteDoctor() {
 		System.out.println("Enter Doctor id");
@@ -154,6 +164,8 @@ public class Operations implements OperationI{
 		
 	}
 
+	/* Method to Fix Appointment of the Doctor the Specific Patient
+	 */
 	@Override
 	public void fixAppointment() {
 		System.out.println("Enter DoctorId");
@@ -208,6 +220,8 @@ public class Operations implements OperationI{
 		
 	}
 
+	/*Method to Read Doctor File
+	 */
 	@Override
 	public void readDoctorFile(String path) {
 		File file = new File(path);
@@ -224,6 +238,8 @@ public class Operations implements OperationI{
 		
 	}
 
+	/*Method to Read Patient File
+	 */
 	@Override
 	public void readPatientFile(String path) {
 		File file = new File(path);
@@ -239,6 +255,8 @@ public class Operations implements OperationI{
 		
 	}
 
+	/*Method to Save Patient Details in Json File
+	 */
 	@Override
 	public void savePatient() {
 		System.out.println("Saving Patient Details into JSON File");
@@ -257,6 +275,8 @@ public class Operations implements OperationI{
 		
 	}
 	
+	/*Method to Save Doctor Details in Json File
+	 */
 	@Override
 	public void saveDoctor() {
 
@@ -276,6 +296,8 @@ public class Operations implements OperationI{
 		
 	}
 
+	/*Method to Save Appointments of Patients in Appointment Json File
+	 */
 	@Override
 	public void saveAppointment() {
 		System.out.println("Saving Appointment Details into JSON File");

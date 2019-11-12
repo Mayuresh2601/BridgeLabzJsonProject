@@ -9,6 +9,11 @@ import com.bridgelabz.inventorymanagement.service.InventoryMethod;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * @author Mayuresh Sunil Sonar
+ * Purpose: Write a Program to Create an inventory Management
+ */
+
 public class InventoryManagementMain {
 	
 	static InventoryMethod method = new InventoryMethod();

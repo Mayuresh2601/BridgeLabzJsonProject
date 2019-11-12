@@ -2,6 +2,11 @@ package com.bridgelabz.deckofcards.controller;
 
 import com.bridgelabz.deckofcards.service.DeckOfCardsMethod;
 
+/**
+ * @author Mayuresh Sunil Sonar
+ * Purpose: Write a Program to Distribute 9 cards to 4 players using Queue
+ */
+
 public class DeckOfCardsUsingQueue<T>  {
 	
 	private int front;
@@ -104,9 +109,6 @@ public class DeckOfCardsUsingQueue<T>  {
 		    		 System.out.print(card+",  ");
 		    	 }
 		     }
-		     
-		     
-
 	}
 
 }

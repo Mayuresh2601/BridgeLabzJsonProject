@@ -6,6 +6,11 @@ import java.io.IOException;
 import com.bridgelabz.addressbook.service.AddressBookMethod;
 import com.bridgelabz.addressbook.utility.JsonUtility;
 
+/**
+ * @author Mayuresh Sunil Sonar
+ * Purpose: Write a Program to Create an AddressBook
+ */
+
 public class AddressBookMain {
 
 	public static void main(String[] args) throws InterruptedException, FileNotFoundException, IOException {

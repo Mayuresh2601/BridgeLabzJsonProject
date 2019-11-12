@@ -7,6 +7,11 @@ import com.bridgelabz.cliniquemanagement.service.Operations;
 import com.bridgelabz.cliniquemanagement.service.Search;
 import com.bridgelabz.cliniquemanagement.service.Utility;
 
+/**
+ * @author Mayuresh Sunil Sonar
+ * Purpose: Write a program to create record of Doctor and Patient and perform operation in Clinique Management
+ */
+
 public class CliniqueMain {
 
 	public static void main(String[] args) throws ParseException {

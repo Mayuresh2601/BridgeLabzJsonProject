@@ -10,6 +10,10 @@ import com.bridgelabz.inventorymanagement.service.InventoryMethod;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 
+/**
+ * @author Mayuresh Sunil Sonar
+ * Purpose: Write a Program to Create an Invemntory Manager System
+ */
 
 public class InventoryManagerMain {
 

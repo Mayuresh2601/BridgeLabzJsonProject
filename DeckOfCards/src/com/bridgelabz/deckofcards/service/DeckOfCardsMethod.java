@@ -11,7 +11,9 @@ public class DeckOfCardsMethod {
 	private static String[] cards = new String[52];
 	Map<String,String> map = new HashMap<String, String>();
 	
-	//Storing Cards on cards array 
+	/**
+	 * @return String Array of Cards with rank and suit
+	 */
 	public String[] getCards() {
 		int i=0;
 		for(String suit : suits)
@@ -24,7 +26,8 @@ public class DeckOfCardsMethod {
 		return cards;
 	}
 	
-	// shuffle cards using random  function
+	/**Method to Shuffle Cards
+	 */
 	public void shuffleCard() {
 		
 		Random random = new Random();
@@ -37,7 +40,11 @@ public class DeckOfCardsMethod {
 		}
 	}
 	
-	//Distributing Equal Number of Cards to Each Player
+	/**
+	 * @param number_of_player
+	 * @param number_of_cards
+	 * @return 2DArray containing 9 cards distributing in 4 players
+	 */
 	public String[][] distribute(int number_of_player,int number_of_cards) {
 		
 		String[][] PlayerCards = new String[number_of_player][number_of_cards];
@@ -52,7 +59,8 @@ public class DeckOfCardsMethod {
 		return PlayerCards;
 	}
 	
-	//Displaying Each Players Cards
+	/**Method to Display Cards on Console
+	 */
 	public void displayCards(String[][] PlayerCards) {
 		
 		int i=1;

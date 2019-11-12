@@ -76,6 +76,9 @@ public class StockAccountMethod {
 		
 	}
 	
+	/**Method to Read Companys Json File
+	 * 
+	 */
 	public void readCompJsonFile() {
 		
 		File file = new File(companypath);
@@ -94,6 +97,9 @@ public class StockAccountMethod {
 		}
 	}
 
+	/**Method to Save Customer Details in Json File
+	 * 
+	 */
 	public void saveCustomer() {
 		
 		System.out.println("Saving Details in Json File");
@@ -112,6 +118,11 @@ public class StockAccountMethod {
 
 	}
 	
+	/**
+	 * @param amount
+	 * @param symbol
+	 * Method to buy Stocks from the Companys
+	 */
 	public void buy(int amount,String symbol) {
 		
 		for (int i = 0; i < customers.size(); i++) {
@@ -133,6 +144,11 @@ public class StockAccountMethod {
 
 	}
 	
+	/**
+	 * @param amount
+	 * @param symbol
+	 * Method to Sell Stocks from the Companys
+	 */
 	public void sell(int amount,String symbol) {
 		
 

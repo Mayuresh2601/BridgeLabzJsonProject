@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 import com.bridgelabz.stockmanagement.service.StockManagementMethod;
 
+/**
+ * @author Mayuresh Sunil Sonar
+ * Purpose: Write a Program to create Stock Management 
+ */
 
 public class StockManagementMain {
 

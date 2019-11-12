@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 import com.bridgelabz.stockaccount.service.StockAccountMethod;
 
+/**
+ * @author Mayuresh Sunil Sonar
+ * Purpose: Write a Program Manage Stock Account
+ */
+
 public class StockAccountMain {
 
 	static StockAccountMethod method = new StockAccountMethod();

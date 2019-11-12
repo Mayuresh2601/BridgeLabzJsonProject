@@ -10,6 +10,10 @@ import com.bridgelabz.addressbook.model.*;
 import com.bridgelabz.addressbook.utility.JsonUtility;
 
 
+/**
+ * @author admin1
+ *
+ */
 public class AddressBookMethod implements IAddressBook{
 
 	private static JsonUtility utility = new JsonUtility();
@@ -21,6 +25,9 @@ public class AddressBookMethod implements IAddressBook{
 	//Path of AddressBook File in json
 	String Path = "/home/admin1/Desktop/BridgeLabz/AddressBook/src/com/Bridgelabz/AddressBook/JsonFile/AddressBook1.json";
 	
+	
+	/*Method for creating New AddressBook
+	 */
 	public void createNewAddressBook() {
 		
 		System.out.println("Enter the State Name:");
@@ -84,6 +91,8 @@ public class AddressBookMethod implements IAddressBook{
 		}
 	}
 	
+	/* Method to Add Person Details
+	 */
 	@Override
 	public void addPersonInfo() {
 		
@@ -140,6 +149,8 @@ public class AddressBookMethod implements IAddressBook{
 	}
 	
 
+	/* Method to Save Details in Address Book
+	 */
 	@Override
 	public void save() {
 		
@@ -158,6 +169,9 @@ public class AddressBookMethod implements IAddressBook{
 		System.out.println();
 	}
 
+	/**Mathod to Print Details of Person on Console
+	 * 
+	 */
 	public static void printDetails() {
 		
 		persons.forEach(i -> {
@@ -171,6 +185,8 @@ public class AddressBookMethod implements IAddressBook{
 		
 	}
 
+	/*Method to Perform operation on Address Book
+	 */
 	@Override
 	public void openAddressBook() {
 		
@@ -278,6 +294,8 @@ public class AddressBookMethod implements IAddressBook{
 		
 	}
 
+	/*Method to Delete Person from the AddressBook
+	 */
 	@Override
 	public void deletePersonInfo() {
 		
@@ -307,6 +325,8 @@ public class AddressBookMethod implements IAddressBook{
 		}
 	}
 
+	/*Method to Edit Person Details in AddressBook 
+	 */
 	@Override
 	public void editPersonInfo() {
 		
@@ -340,6 +360,8 @@ public class AddressBookMethod implements IAddressBook{
 		}
 	}
 
+	/*Method to Sort the Person by Last Name in Ascending Order
+	 */
 	@Override
 	public void sortByLastName() {
 		
@@ -357,6 +379,8 @@ public class AddressBookMethod implements IAddressBook{
 		
 	}
 
+	/*Method to Sort the Person by PinCode in Ascending Order
+	 */
 	@Override
 	public void sortByPinCode() {
 		
@@ -374,6 +398,8 @@ public class AddressBookMethod implements IAddressBook{
 		
 	}
 
+	/*Method to Read the Json file
+	 */
 	@Override
 	public void readJson() {
 		File file = new File(Path);
@@ -396,6 +422,8 @@ public class AddressBookMethod implements IAddressBook{
 		
 	}
 
+	/*Method to SaveAs the file Name  
+	 */
 	@Override
 	public void saveAs() throws FileNotFoundException {
 		

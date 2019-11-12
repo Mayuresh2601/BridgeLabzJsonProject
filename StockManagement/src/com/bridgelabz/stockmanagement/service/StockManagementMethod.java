@@ -17,17 +17,33 @@ public class StockManagementMethod {
 	static StockModel model = new StockModel();
 	static ArrayList<StockInfo> stocks = new ArrayList<StockInfo>();
 	
+	/**
+	 * @param Path
+	 * @param object
+	 * @return Object and convert the Json String into Object
+	 * @throws IOException
+	 */
 	public Object readMapper(String Path,Object object) throws IOException {
 		
 		return mapper.readValue(new File(Path), object.getClass());
 	}
 	
+	/**
+	 * @param Path
+	 * @param object
+	 * @return String and Convert the Object into Json String
+	 * @throws IOException
+	 */
 	public String writeMapper(String Path,Object object) throws IOException {
 		
 		mapper.writeValue(new File(Path), object);
 		return "File Successfully Written...";
 	}
 	
+	/**
+	 * @param Path
+	 * Method to Add Stocks into Company
+	 */
 	public void add(String Path) {
 		
 		StockInfo stock = new StockInfo();
@@ -46,6 +62,8 @@ public class StockManagementMethod {
 		
 	}
 	
+	/**Method to Save Details of Stocks in Json File
+	 */
 	public void save(String Path) {
 		
 		System.out.println("Saving Stock Details in Json File...");
@@ -64,6 +82,8 @@ public class StockManagementMethod {
 		
 	}
 	
+	/**Method to Calculate Stock price
+	 */
 	public void calculate() {
 		
 		int result = 0;
@@ -76,6 +96,8 @@ public class StockManagementMethod {
 
 	}
 	
+	/**Method to Read Json File
+	 */
 	public void readJsonFile(String Path) {
 		
 		File file = new File(Path);

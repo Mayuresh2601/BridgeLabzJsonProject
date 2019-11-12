@@ -19,6 +19,8 @@ public class Display implements DisplayI{
 	String patientfile = "/home/admin1/Desktop/BridgeLabz/CliniqueManagement/src/com/bridgelabz/CliniqueManagement/files/Patient.json";
 
 	
+	/**Method to Perform Operation of Displaying Patient and Doctor Details
+	 */
 	public void operation() {   //display data  patient and doctor wise
 		int ch = 0;
 		do {
@@ -42,12 +44,13 @@ public class Display implements DisplayI{
 		} while (ch != 3);
 	}
 	
+	/*Method to Display Patient Details
+	 */
 	@Override
 	public void patientInformation() {
 		 System.out.println("--------------patient Information------------------\n");
 		
 		o.readPatientFile(patientfile);
-//		patients.forEach(i -> {System.out.println(i.getPatientname() + "\t  " + i.getPid() + "\t" + i.getMobilenumber() + "\t" + i.getAge());});
 		for (int i = 0; i < patients.size(); i++) {
 			 System.out.println(patients.get(i).getPatientname() + "\t  " + patients.get(i).getPid() + "\t" + patients.get(i).getMobilenumber() + "\t" + patients.get(i).getAge());
 		}
@@ -55,6 +58,8 @@ public class Display implements DisplayI{
 		
 	}
 
+	/*Method to Display Doctor Details
+	 */
 	@Override
 	public void doctorInformation() {
 		System.out.println("--------------doctor Information------------------\n");
