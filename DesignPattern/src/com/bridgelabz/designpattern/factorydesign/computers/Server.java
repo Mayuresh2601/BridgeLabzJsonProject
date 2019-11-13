@@ -15,19 +15,19 @@ public class Server extends Computer{
 	
 	@Override
 	public String getRam() {
-		// TODO Auto-generated method stub
+		
 		return this.RAM;
 	}
 
 	@Override
 	public String getHardDisk() {
-		// TODO Auto-generated method stub
+		
 		return this.HDD;
 	}
 
 	@Override
 	public String getCDRom() {
-		// TODO Auto-generated method stub
+		
 		return this.CDRom;
 	}
 	
