@@ -1,3 +1,10 @@
+/******************************************************************************
+*  
+*  Purpose: To Perform EagerInitialization in Singleton Design Pattern
+
+*  @author  Mayuresh Sunil Sonar
+*
+******************************************************************************/
 package com.bridgelabz.designpattern.singletondesign;
 
 public class EagerInitialization {

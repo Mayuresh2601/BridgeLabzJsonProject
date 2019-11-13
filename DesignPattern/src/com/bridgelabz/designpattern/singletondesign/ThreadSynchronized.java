@@ -1,3 +1,10 @@
+/******************************************************************************
+*  
+*  Purpose: To Perform Thread Synchronization in Singleton Design Pattern
+
+*  @author  Mayuresh Sunil Sonar
+*
+******************************************************************************/
 package com.bridgelabz.designpattern.singletondesign;
 
 public class ThreadSynchronized {

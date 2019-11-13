@@ -1,6 +1,11 @@
 package com.bridgelabz.designpattern.prototypedesign;
-
-public class demo {
+/******************************************************************************
+*  
+*  Purpose: To Perform Prototype Design Pattern
+*  @author  Mayuresh Sunil Sonar
+*
+******************************************************************************/
+public class PrototypeMain {
 	
 //	public static void main(String[] args) throws CloneNotSupportedException {
 //		
@@ -19,8 +24,6 @@ public class demo {
 		BookStore bs = new BookStore();
 		bs.setStoreName("Navneet");
 		bs.loadData();
-		
-		
 		
 		BookStore bs1 = bs.clone();
 		bs1.setStoreName("A1");

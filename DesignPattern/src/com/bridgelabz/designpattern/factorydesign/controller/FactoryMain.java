@@ -1,7 +1,12 @@
 package com.bridgelabz.designpattern.factorydesign.controller;
 
 import com.bridgelabz.designpattern.factorydesign.computers.Computer;
-
+/******************************************************************************
+*  
+*  Purpose: To Perform Factory Design Pattern
+*  @author  Mayuresh Sunil Sonar
+*
+******************************************************************************/
 public class FactoryMain {
 	
 	public static void main(String[] args) {
