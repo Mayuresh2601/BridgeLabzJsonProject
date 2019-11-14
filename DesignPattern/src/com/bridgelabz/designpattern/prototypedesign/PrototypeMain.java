@@ -1,10 +1,11 @@
-package com.bridgelabz.designpattern.prototypedesign;
 /******************************************************************************
 *  
 *  Purpose: To Perform Prototype Design Pattern
 *  @author  Mayuresh Sunil Sonar
 *
 ******************************************************************************/
+package com.bridgelabz.designpattern.prototypedesign;
+
 public class PrototypeMain {
 	
 //	public static void main(String[] args) throws CloneNotSupportedException {

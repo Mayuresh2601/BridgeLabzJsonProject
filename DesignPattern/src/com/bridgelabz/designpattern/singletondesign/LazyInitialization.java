@@ -1,7 +1,6 @@
 /******************************************************************************
 *  
 *  Purpose: To Perform LazyInitialization in Singleton Design Pattern
-
 *  @author  Mayuresh Sunil Sonar
 *
 ******************************************************************************/

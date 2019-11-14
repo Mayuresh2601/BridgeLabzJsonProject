@@ -1,7 +1,6 @@
 /******************************************************************************
 *  
 *  Purpose: To Perform Enum Singleton in Singleton Design Pattern
-
 *  @author  Mayuresh Sunil Sonar
 *
 ******************************************************************************/

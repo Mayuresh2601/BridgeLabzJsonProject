@@ -1,7 +1,6 @@
 /******************************************************************************
 *  
 *  Purpose: To Perform Bill Pugh Singleton in Singleton Design Pattern
-
 *  @author  Mayuresh Sunil Sonar
 *
 ******************************************************************************/

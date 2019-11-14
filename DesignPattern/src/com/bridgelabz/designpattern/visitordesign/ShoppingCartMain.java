@@ -1,3 +1,9 @@
+/******************************************************************************
+*  
+*  Purpose: To Perform Visitor Design Pattern
+*  @author  Mayuresh Sunil Sonar
+*
+******************************************************************************/
 package com.bridgelabz.designpattern.visitordesign;
 
 public class ShoppingCartMain {

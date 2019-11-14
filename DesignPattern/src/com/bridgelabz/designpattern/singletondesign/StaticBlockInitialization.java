@@ -1,7 +1,6 @@
 /******************************************************************************
 *  
 *  Purpose: To Perform Static Block Initialization in Singleton Design Pattern
-
 *  @author  Mayuresh Sunil Sonar
 *
 ******************************************************************************/

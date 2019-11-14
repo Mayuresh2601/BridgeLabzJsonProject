@@ -1,10 +1,11 @@
-package com.bridgelabz.designpattern.observerdesign;
 /******************************************************************************
 *  
 *  Purpose: To Perform Observer Design Pattern
 *  @author  Mayuresh Sunil Sonar
 *
 ******************************************************************************/
+package com.bridgelabz.designpattern.observerdesign;
+
 public class Youtube {
 
 	public static void main(String[] args) {

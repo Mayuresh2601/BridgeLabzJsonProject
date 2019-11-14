@@ -1,12 +1,13 @@
-package com.bridgelabz.designpattern.facadedesign;
-
-import java.util.Scanner;
 /******************************************************************************
 *  
 *  Purpose: To Perform Facade Design Pattern
 *  @author  Mayuresh Sunil Sonar
 *
 ******************************************************************************/
+package com.bridgelabz.designpattern.facadedesign;
+
+import java.util.Scanner;
+
 public class Client {
 		
 		public static void main(String[] args) {
