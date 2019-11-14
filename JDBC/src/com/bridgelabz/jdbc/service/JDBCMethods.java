@@ -236,6 +236,11 @@ public class JDBCMethods {
 		
 	}
 	
+	/**
+	 * @return Connection object which contains URL, Username and Password
+	 * @throws ClassNotFoundException
+	 * @throws SQLException
+	 */
 	public static Connection connector() throws ClassNotFoundException, SQLException {
 		
 		String username = "root";

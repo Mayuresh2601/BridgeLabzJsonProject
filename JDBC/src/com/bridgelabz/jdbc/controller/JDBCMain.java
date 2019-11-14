@@ -1,13 +1,14 @@
+/******************************************************************************
+ * 
+*  @author  Mayuresh Sunil Sonar
+*  Purpose: Perform CURD operation on database using JDBC
+*
+******************************************************************************/
 package com.bridgelabz.jdbc.controller;
 
 import java.sql.SQLException;
 
 import com.bridgelabz.jdbc.service.JDBCMethods;
-
-/**
- * @author Mayuresh Sunil Sonar
- * Purpose: Perform CURD operation on database using JDBC
-*/
 
 public class JDBCMain {
 	
