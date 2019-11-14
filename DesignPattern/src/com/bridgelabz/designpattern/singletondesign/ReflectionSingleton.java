@@ -25,7 +25,7 @@ public class ReflectionSingleton {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println(instanceOne.hashCode());
-        System.out.println(instanceTwo.hashCode());
+        System.out.println("HashCode1: "+instanceOne.hashCode());
+        System.out.println("HashCode2: "+instanceTwo.hashCode());
     }
 }

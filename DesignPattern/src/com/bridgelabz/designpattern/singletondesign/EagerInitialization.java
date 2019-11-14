@@ -8,26 +8,17 @@ package com.bridgelabz.designpattern.singletondesign;
 
 public class EagerInitialization {
 	
-	public static EagerInitialization single;
-	
-	private EagerInitialization() {
-		
-		
-	}
-	
-	/**
-	 * @return Instance of the class
-	 */
-	public static EagerInitialization getInstance() {
-		
-		return single;
-	}
+	 private static final EagerInitialization instance = new EagerInitialization();
+	    
+	    /**
+	     * Private Constructor to avoid client applications to use constructor
+	     */
+	    private EagerInitialization(){
+	    	
+	    	
+	    }
 
-	
-	public static void main(String[] args) {
-		
-		EagerInitialization single = getInstance();
-		EagerInitialization single2 = getInstance();
-		
-	}
+	    public static EagerInitialization getInstance(){
+	        return instance;
+	    }
 }
