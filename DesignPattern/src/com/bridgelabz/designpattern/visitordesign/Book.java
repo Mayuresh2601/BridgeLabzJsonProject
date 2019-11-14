@@ -3,19 +3,19 @@ package com.bridgelabz.designpattern.visitordesign;
 public class Book implements ItemsI{
 
 	private int price;
-	private String isbnNumber;
+	private String isbookNumber;
 	
-	public Book(int cost, String isbn){
+	public Book(int cost, String isbook){
 		this.price=cost;
-		this.isbnNumber=isbn;
+		this.isbookNumber=isbook;
 	}
 	
 	public int getPrice() {
 		return price;
 	}
 
-	public String getIsbnNumber() {
-		return isbnNumber;
+	public String getIsbookNumber() {
+		return isbookNumber;
 	}
 
 	@Override

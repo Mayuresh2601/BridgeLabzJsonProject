@@ -7,6 +7,11 @@ public class CommandExecutionProxy implements CommandI{
 	private boolean isAdmin;
 	private CommandExecution executor;
 	
+	/**
+	 * @param user
+	 * @param pwd
+	 * Method Takes the input of User Credentials and checks Authentication
+	 */
 	public CommandExecutionProxy(String user, String pwd){
 		System.out.println("Enter Username and Password");
 		user = scanner.next();
@@ -18,6 +23,8 @@ public class CommandExecutionProxy implements CommandI{
 		
 	}
 	
+	/* Method check the command contains rm or Not
+	 */
 	@Override
 	public void writecommand(String input) throws Exception {
 		if(isAdmin){

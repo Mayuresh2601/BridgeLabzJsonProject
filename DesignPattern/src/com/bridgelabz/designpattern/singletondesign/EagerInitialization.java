@@ -15,6 +15,9 @@ public class EagerInitialization {
 		
 	}
 	
+	/**
+	 * @return Instance of the class
+	 */
 	public static EagerInitialization getInstance() {
 		
 		return single;

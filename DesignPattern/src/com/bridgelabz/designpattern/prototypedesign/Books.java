@@ -21,6 +21,8 @@ public class Books {
 		this.bname = bname;
 	}
 
+	/* Method to get all details of the book
+	 */
 	@Override
 	public String toString() {
 		return "Books [bid=" + bid + ", bname=" + bname + "]";

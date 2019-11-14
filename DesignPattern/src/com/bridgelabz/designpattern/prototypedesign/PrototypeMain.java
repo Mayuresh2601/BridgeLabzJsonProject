@@ -7,7 +7,7 @@
 package com.bridgelabz.designpattern.prototypedesign;
 
 public class PrototypeMain {
-	
+	          /**************** Shallow Cloning **************/
 //	public static void main(String[] args) throws CloneNotSupportedException {
 //		
 //		BookStore bs = new BookStore();
@@ -21,6 +21,7 @@ public class PrototypeMain {
 //		System.out.println(Bs1);
 //	}
 	
+          	 /**************** Deep Cloning **************/
 	public static void main(String[] args) throws CloneNotSupportedException {
 		BookStore bs = new BookStore();
 		bs.setStoreName("Navneet");

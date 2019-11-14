@@ -15,6 +15,9 @@ public class Main {
 		testObjectAdapter();
 	}
 
+	/**
+	 * Method to get Volt value from Object Adapter and store it in Volt object
+	 */
 	private static void testObjectAdapter() {
 		SocketAdapter sockAdapter = new SocketObjectAdapter();
 		Volt v3 = getVolt(sockAdapter,3);
@@ -26,6 +29,9 @@ public class Main {
 		System.out.println("v120 volts using Object Adapter="+v120.getVolt());
 	}
 
+	/**
+	 * Method to get Volt value from Class Adapter and store it in Volt object
+	 */
 	private static void testClassAdapter() {
 		SocketAdapter sockAdapter = new SocketClassAdapter();
 		Volt v3 = getVolt(sockAdapter,3);
@@ -37,6 +43,11 @@ public class Main {
 		System.out.println("v120 volts using Class Adapter="+v120.getVolt());
 	}
 	
+	/**
+	 * @param sockAdapter
+	 * @param i
+	 * @return the Volt which comes from the adapter
+	 */
 	private static Volt getVolt(SocketAdapter sockAdapter, int i) {
 		
 		switch (i){

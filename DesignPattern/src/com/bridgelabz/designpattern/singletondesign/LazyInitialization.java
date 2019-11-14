@@ -17,12 +17,18 @@ public class LazyInitialization {
 	
 	static LazyInitialization Lazy;
 	
+	/**
+	 * Default Constructor to Access it Privately
+	 */
 	private LazyInitialization() {
 		
 		System.out.println("Singleton Created...");
 		
 	}
 	
+	/**
+	 * @return Instance of the Class
+	 */
 	public static LazyInitialization getInstance() {
 		
 		if(Lazy == null) {

@@ -7,6 +7,9 @@ public class Shopkeeper {
 	private InsuranceDetails saminsurance;
 	private InsuranceDetails realinsurance;
 
+	/**
+	 * Shopkeeper Constructor to create object of Class used
+	 */
 	public Shopkeeper() {
 		
 		samsung = new Samsung();
@@ -15,6 +18,9 @@ public class Shopkeeper {
 		realinsurance = new RealInsurance();
 	}
 
+	/**
+	 * Method to get details of the Samsung Phone Sale and Insurance Price
+	 */
 	public void samsungsale() {
 
 		samsung.mobileName();
@@ -23,6 +29,9 @@ public class Shopkeeper {
 		saminsurance.paymentThrough();
 	}
 
+	/**
+	 * Method to get details of Realme Phone Sale and Insurance Price
+	 */
 	public void realmesale() {
 
 		realme.mobileName();

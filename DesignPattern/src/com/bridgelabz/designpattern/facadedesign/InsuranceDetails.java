@@ -2,8 +2,8 @@ package com.bridgelabz.designpattern.facadedesign;
 
 public interface InsuranceDetails {
 	
-	void insurancePrice();
+	public void insurancePrice();
 	
-	void paymentThrough();
+	public void paymentThrough();
 
 }

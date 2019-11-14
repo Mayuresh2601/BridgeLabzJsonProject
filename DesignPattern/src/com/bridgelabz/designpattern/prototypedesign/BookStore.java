@@ -24,6 +24,9 @@ public class BookStore implements Cloneable{
 		this.books = books;
 	} 
 	
+	/**
+	 * Method to Load Book Information
+	 */
 	public void loadData() {
 		
 		for (int i = 1; i <=10 ; i++) {
@@ -34,6 +37,8 @@ public class BookStore implements Cloneable{
 		}
 	}
 
+	/* Method to Display all StoreName
+	 */
 	@Override
 	public String toString() {
 		return "BookStore [storeName=" + storeName + ", books=" + books + "]";

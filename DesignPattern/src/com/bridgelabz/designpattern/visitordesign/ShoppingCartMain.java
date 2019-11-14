@@ -16,6 +16,10 @@ public class ShoppingCartMain {
 		System.out.println("Total Cost = "+total);
 	}
 
+	/**
+	 * @param items
+	 * @return Price of the Items in the Cart
+	 */
 	private static int calculatePrice(ItemsI[] items) {
 		ShoppingCart visitor = new ShoppingCartVisitor();
 		int sum=0;

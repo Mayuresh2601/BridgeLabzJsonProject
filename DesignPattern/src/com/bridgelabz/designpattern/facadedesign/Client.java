@@ -1,6 +1,7 @@
 /******************************************************************************
 *  
 *  Purpose: To Perform Facade Design Pattern
+
 *  @author  Mayuresh Sunil Sonar
 *
 ******************************************************************************/
@@ -20,8 +21,7 @@ public class Client {
 				System.out.println("\nSelect the Mobile to Purchase");
 				System.out.println("1.Samsung");
 				System.out.println("2.Realme");
-				System.out.println("3.Redme");
-				System.out.println("4.Exit");
+				System.out.println("3.Exit");
 				System.out.println("Enter your choice");
 				
 				choice = scanner.nextInt();

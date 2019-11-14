@@ -22,7 +22,7 @@ public class SerializedMain {
 	        out.writeObject(instanceOne);
 	        out.close();
 	        
-	        //deserailize from file to object
+	        //Deserialized from file to object
 	        ObjectInput in = new ObjectInputStream(new FileInputStream(
 	                "filename.ser"));
 	        SerializedSingleton instanceTwo = (SerializedSingleton) in.readObject();

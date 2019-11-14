@@ -2,10 +2,10 @@ package com.bridgelabz.designpattern.adapterdesign;
 
 public interface SocketAdapter {
 	
-	Volt get120Volt();
+	public Volt get120Volt();
 	
-	Volt get12Volt();
+	public Volt get12Volt();
 	
-	Volt get3Volt();
+	public Volt get3Volt();
 
 }

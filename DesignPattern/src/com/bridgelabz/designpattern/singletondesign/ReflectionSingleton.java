@@ -16,7 +16,8 @@ public class ReflectionSingleton {
         try {
             Constructor[] constructors = EagerInitialization.class.getDeclaredConstructors();
             for (Constructor constructor : constructors) {
-                //Below code will destroy the singleton pattern
+               
+            	//Below code will destroy the singleton pattern
                 constructor.setAccessible(true);
                 instanceTwo = (EagerInitialization) constructor.newInstance();
                 break;
