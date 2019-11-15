@@ -15,7 +15,7 @@ public class Subscriber {
 	
 	public void subscribeChannel(Channel ch) {
 		
-		channel = ch;
+		this.channel = ch;
 	}
 
 	public Subscriber(String name) {
